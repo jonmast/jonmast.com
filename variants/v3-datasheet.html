@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jonathan Mast — Staff Engineer</title>
+<meta name="description" content="Jonathan Mast — staff engineer in Philadelphia. Ten years building e-commerce platforms, integrations, and developer tooling.">
+<meta property="og:title" content="Jonathan Mast — Staff Engineer">
+<meta property="og:description" content="Staff engineer in Philadelphia. E-commerce platforms, integrations, and developer tooling.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://jonmast.com/">
+<link rel="canonical" href="https://jonmast.com/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>▤</text></svg>">
+<style>
+  :root {
+    --bg: #f4f3ee;
+    --card: #fbfaf7;
+    --ink: #16150f;
+    --dim: #77746a;
+    --rule: #d8d5cb;
+    --accent: #1f5c4a;
+    --mark: #d9e8e2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101211;
+      --card: #171a19;
+      --ink: #e9e8e1;
+      --dim: #8e8d84;
+      --rule: #2a2e2c;
+      --accent: #6fc3a5;
+      --mark: #1d302a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: clamp(1rem, 4vw, 3.5rem);
+  }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+  .sheet {
+    max-width: 62rem;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--rule);
+  }
+
+  header {
+    padding: clamp(1.6rem, 4vw, 2.6rem);
+    border-bottom: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.2rem;
+    align-items: end;
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(1.9rem, 5.5vw, 3rem);
+    letter-spacing: -0.03em;
+    line-height: 1;
+    font-weight: 650;
+  }
+  .role {
+    margin: 0.55rem 0 0;
+    color: var(--dim);
+    font-size: 0.82rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .stamp {
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 0.3rem 0.6rem;
+    white-space: nowrap;
+  }
+
+  .grid { display: grid; grid-template-columns: 11rem 1fr; }
+  @media (max-width: 42rem) { .grid { grid-template-columns: 1fr; } }
+
+  .grid > .label {
+    padding: 1.5rem clamp(1.6rem, 4vw, 2.6rem);
+    border-bottom: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--dim);
+  }
+  .grid > .field {
+    padding: 1.5rem clamp(1.6rem, 4vw, 2.6rem);
+    border-bottom: 1px solid var(--rule);
+  }
+  @media (max-width: 42rem) {
+    .grid > .label { border-right: 0; border-bottom: 0; padding-bottom: 0; }
+    .grid > .field { padding-top: 0.6rem; }
+  }
+  .grid > :last-child { border-bottom: 0; }
+
+  p { margin: 0 0 0.85rem; }
+  p:last-child { margin-bottom: 0; }
+
+  .entry { padding-bottom: 1.2rem; margin-bottom: 1.2rem; border-bottom: 1px dashed var(--rule); }
+  .entry:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
+  .entry .top { display: flex; flex-wrap: wrap; gap: 0.2rem 0.8rem; align-items: baseline; }
+  .entry h3 { margin: 0; font-size: 1rem; font-weight: 650; }
+  .entry .when {
+    margin-left: auto;
+    font-size: 0.78rem;
+    color: var(--dim);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+  @media (max-width: 42rem) { .entry .when { margin-left: 0; flex-basis: 100%; } }
+  .entry .pos { color: var(--accent); font-size: 0.88rem; }
+  .entry ul { margin: 0.45rem 0 0; padding-left: 1.05rem; color: var(--dim); font-size: 0.92rem; }
+  .entry ul li { margin: 0.25rem 0; }
+  .entry .what { color: var(--dim); font-size: 0.92rem; margin-top: 0.35rem; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .chip {
+    font-size: 0.78rem;
+    background: var(--mark);
+    color: var(--accent);
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+  }
+
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-bottom-color: currentColor; }
+
+  .kv { display: grid; gap: 0.35rem; }
+  .kv a { font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header>
+    <div>
+      <h1>Jonathan Mast</h1>
+      <p class="role">Staff Engineer · Philadelphia, PA</p>
+    </div>
+    <span class="stamp mono">Rev. 2026</span>
+  </header>
+
+  <div class="grid">
+
+    <div class="label mono">Summary</div>
+    <div class="field">
+      <p>Staff engineer with ten years building and maintaining commerce systems — the kind where inventory, pricing, and orders have to stay in sync across several third-party platforms that disagree with each other.</p>
+      <p>Ruby on Rails, TypeScript, and AWS professionally. Rust on my own time, mostly for developer tooling and the occasional microcontroller project.</p>
+    </div>
+
+    <div class="label mono">Experience</div>
+    <div class="field">
+
+      <div class="entry">
+        <div class="top">
+          <h3>Syatt</h3>
+          <span class="pos">Staff Engineer</span>
+          <span class="when mono">Sept 2021 — Present</span>
+        </div>
+        <ul>
+          <li>Architected and led development of a data pipeline synchronizing inventory, pricing, and order data across third-party commerce systems — TypeScript on AWS Lambda.</li>
+          <li>Built custom storefront features on the Workarea, VTEX, and Shopify platforms.</li>
+          <li>Promoted from Senior Developer.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="top">
+          <h3>BVA</h3>
+          <span class="pos">Senior Back-End Developer</span>
+          <span class="when mono">Feb 2020 — Sept 2021</span>
+        </div>
+        <ul>
+          <li>Maintained a portfolio of e-commerce sites on the Workarea platform (Ruby on Rails).</li>
+          <li>Developed custom Shopify apps for integrations and platform feature enhancements (NestJS).</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="top">
+          <h3>King &amp; Partners</h3>
+          <span class="pos">Senior Web Developer</span>
+          <span class="when mono">Apr 2017 — Feb 2020</span>
+        </div>
+        <ul>
+          <li>Built features for and maintained a custom e-commerce platform.</li>
+          <li>Integrated third-party APIs including Stripe and MailChimp.</li>
+          <li>Trained and mentored junior developers.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="top">
+          <h3>Freelance</h3>
+          <span class="pos">Web Developer</span>
+          <span class="when mono">Nov 2015 — Mar 2017</span>
+        </div>
+        <ul>
+          <li><strong>congo.io</strong> — built from the ground up: adds bumpers and watermarks to uploaded video and syndicates it to social platforms automatically.</li>
+          <li><strong>mykyrios.com</strong> — frontend and integration work for a lending application.</li>
+          <li><strong>textbookvalet.com</strong> — frontend redesign, feature additions, API integrations.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="label mono">Stack</div>
+    <div class="field">
+      <div class="chips">
+        <span class="chip mono">Ruby / Rails</span>
+        <span class="chip mono">TypeScript</span>
+        <span class="chip mono">Node</span>
+        <span class="chip mono">React</span>
+        <span class="chip mono">Vue</span>
+        <span class="chip mono">Rust</span>
+        <span class="chip mono">PostgreSQL</span>
+        <span class="chip mono">MySQL</span>
+        <span class="chip mono">MongoDB</span>
+        <span class="chip mono">AWS Lambda</span>
+        <span class="chip mono">Docker</span>
+        <span class="chip mono">TDD</span>
+      </div>
+    </div>
+
+    <div class="label mono">Projects</div>
+    <div class="field">
+      <div class="entry">
+        <div class="top">
+          <h3><a href="https://github.com/jonmast/oxidux">oxidux</a></h3>
+          <span class="when mono">Rust</span>
+        </div>
+        <div class="what">Reverse proxy and process manager for local web development.</div>
+      </div>
+      <div class="entry">
+        <div class="top">
+          <h3><a href="https://github.com/kingandpartners/delayed_cron">delayed_cron</a></h3>
+          <span class="when mono">Ruby · 16★</span>
+        </div>
+        <div class="what">Cron-style recurring jobs across Sidekiq, Resque, Delayed Job, and Sucker Punch.</div>
+      </div>
+      <div class="entry">
+        <div class="top">
+          <h3><a href="https://github.com/jonmast/llm-wake-proxy">llm-wake-proxy</a></h3>
+          <span class="when mono">Rust</span>
+        </div>
+        <div class="what">Proxy that wakes a sleeping inference host on demand.</div>
+      </div>
+      <div class="entry">
+        <div class="top">
+          <h3><a href="https://github.com/jonmast/thermostat">thermostat</a></h3>
+          <span class="when mono">Rust</span>
+        </div>
+        <div class="what">Internet-connected thermostat running on a Raspberry Pi Zero W.</div>
+      </div>
+    </div>
+
+    <div class="label mono">Contact</div>
+    <div class="field">
+      <div class="kv mono">
+        <a href="https://github.com/jonmast">github.com/jonmast</a>
+        <a href="https://www.linkedin.com/in/jonmast">linkedin.com/in/jonmast</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

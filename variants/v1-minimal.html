@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jonathan Mast — Staff Engineer</title>
+<meta name="description" content="Jonathan Mast — staff engineer in Philadelphia. Ten years building e-commerce platforms, integrations, and developer tooling.">
+<meta property="og:title" content="Jonathan Mast — Staff Engineer">
+<meta property="og:description" content="Staff engineer in Philadelphia. E-commerce platforms, integrations, and developer tooling.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://jonmast.com/">
+<link rel="canonical" href="https://jonmast.com/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+<style>
+  :root {
+    --bg: #fdfdfc;
+    --fg: #1a1a18;
+    --muted: #6b6b64;
+    --rule: #e4e4de;
+    --accent: #b4531f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14140f;
+      --fg: #ecece4;
+      --muted: #9a9a90;
+      --rule: #2c2c26;
+      --accent: #e08a4c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 400 17px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+    font-feature-settings: "kern", "liga";
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: clamp(3rem, 12vh, 7rem) clamp(1.4rem, 5vw, 2.5rem) 5rem;
+  }
+  h1 {
+    font-size: clamp(2.1rem, 6vw, 3.1rem);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.6rem;
+    font-weight: 600;
+  }
+  .tagline {
+    font-size: clamp(1.05rem, 2.6vw, 1.25rem);
+    color: var(--muted);
+    margin: 0 0 2.4rem;
+    max-width: 34rem;
+  }
+  .tagline strong { color: var(--fg); font-weight: 500; }
+  h2 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: var(--muted);
+    font-weight: 600;
+    margin: 3rem 0 1.1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .bio p { margin: 0 0 1rem; }
+  .bio p:last-child { margin-bottom: 0; }
+
+  ul.list { list-style: none; margin: 0; padding: 0; }
+  ul.list > li { padding: 1.15rem 0; border-bottom: 1px solid var(--rule); }
+  ul.list > li:last-child { border-bottom: 0; padding-bottom: 0; }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem 0.8rem;
+  }
+  .row .title { font-weight: 600; }
+  .row .meta {
+    margin-left: auto;
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  @media (max-width: 34rem) {
+    .row .meta { margin-left: 0; flex-basis: 100%; }
+  }
+  .role {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 0.1rem;
+  }
+  .role .was { font-size: 0.85rem; opacity: .8; }
+
+  ul.pts {
+    margin: 0.55rem 0 0;
+    padding-left: 1.05rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  ul.pts li { margin: 0.3rem 0; }
+
+  .tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    padding: 0.08rem 0.5rem;
+    vertical-align: 2px;
+  }
+
+  .skills { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+  .skills span {
+    font-size: 0.87rem;
+    color: var(--muted);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 0.25rem 0.65rem;
+  }
+
+  a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 3px; }
+  a:hover { color: var(--accent); text-decoration-color: currentColor; }
+
+  .links { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+  .links a {
+    text-decoration: none;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 0.55rem 1rem;
+    font-size: 0.92rem;
+    font-weight: 500;
+    transition: border-color .15s, color .15s;
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <h1>Jonathan Mast</h1>
+  <p class="tagline">Staff engineer at <strong>Syatt</strong>, based in Philadelphia. Ten years building e-commerce platforms, third-party integrations, and the tooling that holds them together.</p>
+
+  <section class="bio">
+    <h2>About</h2>
+    <p>Most of my career has been spent in commerce systems — the kind where inventory, pricing, and orders have to stay in sync across a handful of platforms that disagree with each other. I like the integration-heavy, correctness-sensitive end of the work.</p>
+    <p>Professionally that's meant Ruby on Rails, TypeScript, and AWS. On my own time it's mostly Rust: developer tooling, a few proxies, and the occasional microcontroller soldered into a household object that never asked for one.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <ul class="list">
+      <li>
+        <div class="row">
+          <span class="title">Syatt</span>
+          <span class="tag">Current</span>
+          <span class="meta">Sept 2021 – Present</span>
+        </div>
+        <div class="role">Staff Engineer <span class="was">· previously Senior Developer</span></div>
+        <ul class="pts">
+          <li>Architected and led development of a data pipeline synchronizing inventory, pricing, and order data across third-party commerce systems — TypeScript on AWS Lambda.</li>
+          <li>Built custom features for storefronts on the Workarea, VTEX, and Shopify platforms.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="row">
+          <span class="title">BVA</span>
+          <span class="meta">Feb 2020 – Sept 2021</span>
+        </div>
+        <div class="role">Senior Back-End Developer · Philadelphia / Remote</div>
+        <ul class="pts">
+          <li>Maintained a portfolio of e-commerce sites on the Workarea platform (Ruby on Rails).</li>
+          <li>Developed custom Shopify apps for integrations and platform feature enhancements (NestJS).</li>
+        </ul>
+      </li>
+      <li>
+        <div class="row">
+          <span class="title">King &amp; Partners</span>
+          <span class="meta">Apr 2017 – Feb 2020</span>
+        </div>
+        <div class="role">Senior Web Developer · Remote</div>
+        <ul class="pts">
+          <li>Built features for and maintained a custom e-commerce platform.</li>
+          <li>Integrated third-party APIs including Stripe and MailChimp.</li>
+          <li>Trained and mentored junior developers.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="row">
+          <span class="title">Freelance</span>
+          <span class="meta">Nov 2015 – Mar 2017</span>
+        </div>
+        <div class="role">Web Developer · Remote</div>
+        <ul class="pts">
+          <li><strong>congo.io</strong> — built from the ground up: adds bumpers and watermarks to uploaded video and syndicates it to social platforms automatically.</li>
+          <li><strong>mykyrios.com</strong> — frontend and integration work for a lending application.</li>
+          <li><strong>textbookvalet.com</strong> — frontend redesign, feature work, and API integrations.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tools</h2>
+    <div class="skills">
+      <span>Ruby / Rails</span>
+      <span>TypeScript</span>
+      <span>Node</span>
+      <span>React</span>
+      <span>Vue</span>
+      <span>Rust</span>
+      <span>PostgreSQL</span>
+      <span>MySQL</span>
+      <span>MongoDB</span>
+      <span>AWS Lambda</span>
+      <span>Docker</span>
+      <span>Test-driven development</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Side Projects</h2>
+    <ul class="list">
+      <li>
+        <div class="row">
+          <span class="title"><a href="https://github.com/jonmast/oxidux">oxidux</a></span>
+          <span class="meta">Rust</span>
+        </div>
+        <div class="role">Reverse proxy and process manager for local web development.</div>
+      </li>
+      <li>
+        <div class="row">
+          <span class="title"><a href="https://github.com/kingandpartners/delayed_cron">delayed_cron</a></span>
+          <span class="meta">Ruby</span>
+        </div>
+        <div class="role">Cron-style recurring jobs for Sidekiq, Resque, Delayed Job, and Sucker Punch.</div>
+      </li>
+      <li>
+        <div class="row">
+          <span class="title"><a href="https://github.com/jonmast/llm-wake-proxy">llm-wake-proxy</a></span>
+          <span class="meta">Rust</span>
+        </div>
+        <div class="role">Proxy that wakes a sleeping inference host on demand.</div>
+      </li>
+      <li>
+        <div class="row">
+          <span class="title"><a href="https://github.com/jonmast/thermostat">thermostat</a></span>
+          <span class="meta">Rust</span>
+        </div>
+        <div class="role">Internet-connected thermostat running on a Raspberry Pi Zero W.</div>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Elsewhere</h2>
+    <div class="links">
+      <a href="https://github.com/jonmast">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/jonmast">LinkedIn ↗</a>
+    </div>
+  </section>
+
+  <footer>Philadelphia, PA</footer>
+
+</main>
+</body>
+</html>
