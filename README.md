@@ -1,3 +1,3 @@
 # jonmast.com
 
-Personal resume splash page.## Local preview
+Personal resume splash page.
